@@ -1,6 +1,6 @@
 # FLEX MOVIES
 
-![Flex movies]("./src/assets/readme/home.png")
+![Flex movies](./src/assets/readme/home.png)
 
 ## Descripción
 
@@ -8,8 +8,8 @@ Flex movies es una aplicación web que permite a los usuarios buscar informació
 
 ## Capturas de pantalla
 
-![Movies]("./src/assets/readme/movies.png")
-![Detail]("./src/assets/readme/detail.png")
+![Movies](./src/assets/readme/movies.png)
+![Detail](./src/assets/readme/detail.png)
 
 ## Características
 
