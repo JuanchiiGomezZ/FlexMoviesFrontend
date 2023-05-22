@@ -1,0 +1,32 @@
+.counterContainer{
+    display: flex;
+    justify-content: center;
+    .counter{   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+        font-size: 30px;
+       /*  width: 200px; */
+        background-color: $white;
+        border-radius: 15px;
+        padding: 0 10px;
+        .controls{
+            color: $orange;
+            cursor: pointer;
+        }
+        .page{
+            /* width: 50px; */
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 30px;
+            .littleNum{
+                font-size: 20px;
+                color: $darkGrey;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

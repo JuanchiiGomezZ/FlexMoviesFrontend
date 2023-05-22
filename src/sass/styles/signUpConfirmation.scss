@@ -1,0 +1,102 @@
+.confirmationBg {
+  width: 100%;
+  height: calc(100vh - 70px);
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .confirmationContainer {
+    width: 450px;
+    height: 500px;
+    background-color: $background;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px 0 25px;
+    .confirmation {
+      width: 80%;
+      margin: 0 auto;
+      .logoForm {
+        text-align: center;
+        p {
+          color: $orange;
+          font-size: 3rem;
+          font-weight: 600;
+          cursor: default;
+        }
+      }
+      .changeImg {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-left: 40px;
+        margin: 25px 0px 25px 40px;
+        img {
+          width: 200px;
+          border-radius: 50%;
+        }
+        .editLogo {
+          color: $background;
+          background-color: $white;
+          height: 40px;
+          width: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          position: relative;
+          right: 60px;
+          cursor: pointer;
+        }
+      }
+      .input {
+        display: flex;
+        flex-direction: column;
+        label {
+          color: $white;
+          padding-left: 10px;
+        }
+        input {
+          height: 40px;
+          background-color: $darkGrey;
+          border: 0;
+          outline: none;
+          color: $white;
+          font-size: 17px;
+          padding-right: 5px;
+          margin-left: 5px;
+          padding-left: 10px;
+          border-radius: 10px;
+        }
+        .invalid {
+          border: 2px solid red;
+        }
+        .sendBtn {
+          background-color: $orange;
+          height: 45px;
+          width: 100%;
+          font-size: 25px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 15px;
+          color: $white;
+          cursor: pointer;
+          margin: 10px 0;
+          border: none;
+          &:hover {
+            background-color: $white;
+            color: $orange;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+    .confirmationBg{
+        .confirmationContainer{
+            width: 90%;
+        }
+    }
+}

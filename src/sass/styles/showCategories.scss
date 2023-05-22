@@ -1,0 +1,16 @@
+.showsContainer {
+  margin-top:50px;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+
+  overflow: hidden;
+
+}
+
+@media (max-width:775px){
+  .showsContainer{
+      margin-top:30px;
+      grid-template-columns: none;
+      grid-template-rows: auto 1fr ;
+  }
+}

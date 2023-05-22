@@ -1,0 +1,46 @@
+.moreDetailsContainer {
+    .recommendations {
+      display: flex;
+      overflow-x: scroll;
+      gap: 20px;
+      .cardRecommendation {
+        flex-shrink: 0;
+        width: 400px;
+        max-width: 100%;
+        cursor: pointer;
+        img {
+          border-radius: 15px;
+          width: 100%;
+          
+        }:hover{
+            filter: saturate(150%);
+        }
+        .tittleRecommendation {
+          width: 350px;
+          max-width: 90%;
+          font-size: 18px;
+          font-weight: 600;
+          margin-left: 15px;
+          margin-bottom: 15px;
+          p {
+            color: $white;
+          }
+        }
+      }
+ 
+    }
+    .noRecommendations{
+        color: $white;
+        font-size: 19px;
+    }
+  }
+
+  .recommendations::-webkit-scrollbar{
+    height: 12px;
+  }
+  .recommendations::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+  }
+  .recommendations::-webkit-scrollbar-track{
+    border-radius: 5px;
+  }

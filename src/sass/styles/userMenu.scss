@@ -1,0 +1,109 @@
+header {
+  .profileMenuActive {
+    top: 69px;
+    transition: 0.4s ease-in;
+  }
+  .profileMenuHidden {
+    top: -440px;
+    transition: 0.4s ease-in;
+  }
+  .profileMenu {
+    position: fixed;
+    z-index: 4;
+    right: 7%;
+    width: 300px;
+    background-color: #1c1c1c;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: $white;
+    .profiles {
+      margin: 20px 0 10px;
+
+      .profileTitle {
+        font-size: 20px;
+        font-weight: 700;
+        padding: 0 20px;
+      }
+      .profile {
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        height: 60px;
+        cursor: pointer;
+        img {
+          width: 45px;
+          margin-right: 10px;
+          border-radius: 50%;
+        }
+        &:hover {
+          background-color: $background;
+          transition: 0.4s ease-in-out;
+        }
+      }
+    }
+    .optionsMenu {
+      margin: 9px 0;
+      padding: 0 20px;
+      .option {
+        margin: 15px 0;
+        cursor: pointer;
+        font-size: 17px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: $white;
+        .optionIcon {
+          width: 22px;
+          text-align: center;
+        }
+        p:hover {
+          color: $orange;
+          transition: 0.3s ease;
+        }
+      }
+    }
+    .logout {
+      padding: 0 20px;
+      height: 70px;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+}
+
+@media (max-width: 820px) {
+  header {
+    nav {
+      .profileMenu {
+        right: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  header {
+    nav {
+      .profileMenu {
+        width: 100%;
+        height: calc(100vh - 70px);
+        right: 0;
+        border-radius: 0;
+      }
+      .profileMenuActive {
+        top: 69px;
+        transition: 0.5s ease-in;
+      }
+      .profileMenuHidden {
+        top: -100vh;
+        transition: 0.5s ease-in;
+      }
+    }
+  }
+}

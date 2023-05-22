@@ -1,0 +1,31 @@
+.pageNotFound {
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 450px;
+  }
+  .errorDet {
+    color: $white;
+    .error {
+      font-size: 35px;
+    }
+    .yuzuText {
+      font-size: 18px;
+    }
+    .goHomeBtn {
+      background-color: $orange;
+      width: 200px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: black;
+      font-weight: 600;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  }
+}

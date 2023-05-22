@@ -1,0 +1,57 @@
+.logo {
+  padding: 5px;
+  a {
+    position: relative;
+    color: $orange;
+    overflow: visible;
+    font-size: 2rem;
+    font-weight: 600;
+    &:after {
+      bottom: -4px;
+      content: "";
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: $orange;
+      transition: 0.4s ease 0s, left 0.4s ease 0s;
+      width: 0;
+    }
+    &:hover:after {
+      width: 100%;
+      left: 0;
+    }
+  }
+}
+
+.logoXL {
+  a {
+    position: relative;
+    color: $orange;
+    overflow: visible;
+    font-size: 3rem;
+    font-weight: 600;
+    &:after {
+      bottom: -4px;
+      content: "";
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: $orange;
+      transition: 0.4s ease 0s, left 0.4s ease 0s;
+      width: 0;
+    }
+    &:hover:after {
+      width: 100%;
+      left: 0;
+    }
+  }
+}
+
+@media (max-width: 820px) {
+  .logo {
+    a {
+      position: static;
+      
+    }
+  }
+}

@@ -1,0 +1,153 @@
+header {
+  .navMobile {
+    margin-bottom: 71px;
+    .containerMobile {
+      height: 70px;
+      background-color: $background;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      max-width: 100vw;
+      z-index: 10;
+      overflow: hidden;
+
+      .burgerMenu {
+        overflow: hidden;
+        .burgerIcon {
+          color: $white;
+          font-size: 25px;
+          cursor: pointer;
+        }
+        .hidden {
+          transform: rotate(180deg);
+          transition: 0.4 ease-in;
+        }
+        .active {
+          transform: rotate(90deg);
+          transition: 0.4 ease-in;
+        }
+      }
+      .logoMobile {
+        margin-left: 142px;
+      }
+      .endPart {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .searchIcon {
+          color: $white;
+          font-size: 22px;
+          cursor: pointer;
+        }
+        .logInBtn {
+          color: $white;
+          background-color: $orange;
+          width: 100px;
+          height: 35px;
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+    .searchBarContainer {
+      height: 70px;
+      width: 100%;
+      background-color: #1c1c1c;
+      position: fixed;
+      z-index: 4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      .searchInput {
+        background-color: #1c1c1c;
+        border: none;
+        width: 90%;
+        height: 35px;
+        border-bottom: $orange 2px solid;
+        font-size: 22px;
+        outline: none;
+        color: $white;
+      }
+    }
+    .searchBarContainerHidden {
+      top: 0;
+      transition: 0.4s ease-in-out;
+    }
+    .searchBarContainerActive {
+      top: 69px;
+      transition: 0.4s ease-in-out;
+    }
+    .burgerMenuContainer {
+      position: fixed;
+      z-index: 9;
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: #1c1c1c;
+      .burgerMenuItems {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        .categorie {
+          margin: 10px 0;
+          font-size: 20px;
+          color: $white;
+          text-align: center;
+        }
+
+        .logInBtn:hover {
+          background-color: $white;
+          color: $orange;
+        }
+      }
+    }
+    .hidden {
+      top: -110px;
+      transition: 0.4s ease-in-out;
+    }
+    .active {
+      top: 69px;
+      transition: 0.4s ease-in-out;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  header {
+    .navMobile {
+      .containerMobile {
+        padding: 0;
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  header {
+    .navMobile {
+      .containerMobile {
+        justify-content: flex-start;
+        .logoMobile {
+          margin-left: 7px;
+        }
+        .endPart {
+          margin-left: auto;
+        }
+        .logInBtn {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

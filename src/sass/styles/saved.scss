@@ -1,0 +1,191 @@
+.saved {
+  min-height: 80vh;
+  .savedContainer {
+    margin: 30px auto 20px;
+    width: 1100px;
+
+    .savedTitle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      color: $white;
+      gap: 10px;
+    }
+    .savedCategories {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+      border-bottom: 3px solid rgba(0, 0, 0, 0.25);
+      gap: 15px;
+      .savedCategorie {
+        padding: 0 20px;
+        height: 40px;
+        font-size: 20px;
+        color: $offWhite;
+        cursor: pointer;
+        &:hover {
+          border-bottom: 4px solid $orange;
+          color: $white;
+        }
+      }
+      .active {
+        border-bottom: 4px solid $orange;
+        color: $white;
+      }
+    }
+    .savedShowsContainer {
+      margin-top: 30px;
+      .head {
+        .filterSaved {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          gap: 5px;
+          font-size: 18px;
+          cursor: pointer;
+          color: $offWhite;
+        }
+      }
+      .shows {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 30px;
+
+        .cardShow {
+          width: calc(25% - 15px);
+          gap: 15px;
+          img {
+            width: 100%;
+          }
+          .title {
+            font-weight: 600;
+            font-size: 21px;
+            max-height: 65px;
+            color: $white;
+          }
+          .duration {
+            color: $offWhite;
+            font-size: 16px;
+          }
+          .cardShowDetails {
+            height: 132px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .foot {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              color: $offWhite;
+              .fa-trash {
+                font-size: 17px;
+                cursor: pointer;
+                &:hover {
+                  color: rgb(255, 54, 54);
+                  transition: 0.2s ease-in-out;
+                }
+              }
+              .mediaType {
+                display: flex;
+                gap: 5px;
+                .type {
+                  color: $orange;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .noSavedContainer {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed white;
+    gap: 20px;
+    .infoNoSaved {
+      text-align: center;
+      p {
+        color: $offWhite;
+      }
+      a {
+        color: $orange;
+        &:hover {
+          color: $white;
+          text-decoration: underline;
+          transition: 0.3s ease;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .saved {
+    .savedContainer {
+      width: 95%;
+      .savedShowsContainer {
+        .shows {
+          .cardShow {
+            width: calc(33.33% - 14px);
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .saved {
+    .savedContainer {
+      .savedShowsContainer {
+        .shows {
+          .cardShow {
+            width: calc(50% - 10px);
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 575px) {
+  .saved {
+    .savedContainer {
+      .savedCategories {
+        justify-content: space-between;
+        text-align: center;
+        .savedCategorie {
+          font-size: 18px;
+          padding: 0;
+        }
+      }
+      .savedShowsContainer {
+        .shows {
+          .cardShow {
+            width: 100%;
+            display: flex;
+            img {
+              width: 100px;
+            }
+            .title {
+              font-size: 18px;
+            }
+            .foot {
+              margin: 0;
+            }
+            .cardShowDetails {
+              width: calc(100% - 120px);
+              height: 150px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

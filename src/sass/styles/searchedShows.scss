@@ -1,0 +1,29 @@
+.noSearch {
+  height: 65vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  p {
+    margin-top: 50px;
+    font-size: 35px;
+    font-weight: 700;
+    color: $offWhite;
+  }
+}
+
+.searchedContainer {
+  .searchedHead {
+    margin-left: 2.5%;
+  }
+  .cardsSearched {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 775px) {
+  .searchedContainer {
+    .searchedHead {
+      margin-left: 0;
+    }
+  }
+}

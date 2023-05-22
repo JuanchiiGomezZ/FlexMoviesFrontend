@@ -1,0 +1,117 @@
+.modal {
+  .modalContainer {
+    width: 550px;
+    height: calc(90vh - 70px);
+    background-color: $background;
+    position: absolute;
+    top: calc(50% + 70px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    .head {
+      height: 140px;
+      width: 100%;
+      background-color: #1c1c1c;
+      .closeIcon {
+        width: 98%;
+        color: $white;
+        font-size: 25px;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 5px;
+        
+      }
+      .headInfo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        color: $white;
+        width: 90%; 
+        margin: 0 auto;
+        img {
+          width: 100px;
+          border-radius: 50%;
+        }
+        .chooseAvatar {
+          font-size: 600;
+          font-size: 18px;
+        }
+        .saveBtn {
+          background-color: $orange;
+          margin-top: 20px;
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 20px;
+          border-radius: 10px;
+          cursor: pointer;
+          &:hover {
+            color: $orange;
+            background-color: $white;
+            transition: 0.3 ease;
+          }
+        }
+      }
+    }
+    .avataresContainer {
+      padding: 20px 0;
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      height: calc(100% - 150px);
+      img {
+        width: calc(33.33% - 40px);
+        border-radius: 10px;
+        cursor: pointer;
+        &:hover {
+          outline: 4px rgb(68, 251, 36) solid;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .modal {
+    .modalContainer {
+      width: 95%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .modal {
+    .modalContainer {
+      .avataresContainer {
+        width: 95%;
+        img {
+          width: calc(45% - 20px);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 4250px) {
+  .modal {
+    .modalContainer {
+      .head {
+        .headInfo {
+          width: 90%;
+          margin: 0 auto;
+          img {
+            width: 90px;
+          }
+
+          gap: 30px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@import './global.scss';
+
+// Logo
+@import './styles/logo.scss';
+// Navbar
+@import './styles/navbarPC.scss';
+@import './styles//navbarMobile.scss';
+@import './styles/searchBar.scss';
+
+//Home
+@import './styles/home.scss';
+@import './styles/homePoster.scss';
+
+/* Card */
+@import './styles/card.scss';
+
+@import './styles/cardsCarrousel.scss';
+
+/* Footer */
+@import './styles/footer.scss';
+
+/* Loader */
+@import './styles/loader.scss';
+
+@import './styles/cardsListedContainer.scss';
+
+@import './styles/categoriesNav.scss';
+
+@import './styles/counterPage.scss';
+
+@import 'styles/showCategories.scss';
+
+@import './styles//filter.scss';
+
+@import './styles/showDetails.scss';
+
+@import './styles/pageNotFound.scss';
+
+@import './styles/recommendations.scss';
+
+@import './styles/detailsMobile.scss';
+
+@import './styles/scoreBar.scss';
+
+@import './styles/showActors.scss';
+
+@import './styles/functionsBtns.scss';
+
+@import './styles/signUp.scss';
+
+@import './styles/login.scss';
+
+@import './styles/searchedShows.scss';
+
+@import './styles/userMenu.scss';
+
+@import './styles/signUpConfirmation.scss';
+
+@import './styles/avatarsModal.scss';
+
+@import './styles/saved.scss';
