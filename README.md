@@ -2,7 +2,7 @@
 
 Check out the [Movie App web application deployed in Vercel](https://flex-movies.vercel.app/)
 
-![Flex Movies](./src/assets/home.png)
+![Flex Movies](./src/assets/readme/home.png)
 
 ## Description
 
@@ -10,8 +10,8 @@ Flex Movies is a web application that allows users to search for information abo
 
 ## Screenshots
 
-![Screenshot 1](./src/assets/movies.png)
-![Screenshot 2](./src/assets/detail.png)
+![Screenshot 1](./src/assets/readme/movies.png)
+![Screenshot 2](./src/assets/readme/detail.png)
 
 ## Features
 
