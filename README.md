@@ -1,72 +1,78 @@
-# FLEX MOVIES
+# Flex Movies
 
-![Flex movies](./src/assets/readme/home.png)
+Check out the [Movie App web application deployed in Vercel](https://flex-movies.vercel.app/)
 
-## Descripción
+![Flex Movies](./src/assets/home.png)
 
-Flex movies es una aplicación web que permite a los usuarios buscar información sobre películas y series. Utiliza la API de The Movie Database (TMDb) para obtener datos actualizados sobre películas, como detalles de la trama, calificaciones, reparto y más. Los usuarios pueden realizar búsquedas, ver detalles de películas y guardar sus películas favoritas.
+## Description
 
-## Capturas de pantalla
+Flex Movies is a web application that allows users to search for information about movies and TV shows. It utilizes The Movie Database (TMDb) API to fetch updated movie data, such as plot details, ratings, cast, and more. Users can perform searches, view movie details, and save their favorite movies.
 
-![Movies](./src/assets/readme/movies.png)
-![Detail](./src/assets/readme/detail.png)
+## Screenshots
 
-## Características
+![Screenshot 1](./src/assets/movies.png)
+![Screenshot 2](./src/assets/detail.png)
 
-- Búsqueda de películas y series por título.
-- Visualización de detalles de películas, como sinopsis, calificación, reparto, géneros, trailers, etc.
-- Interfaz de usuario intuitiva y amigable.
-- Ordenar las peliculas y series por Popularidad, Calificacion Fecha de lanzamiento y Titulo.
-- Filtrar las peliculas y series por generos.
-- Crear una cuenta e iniciar sesion.
-- Guardado de películas favoritas.
+## Features
 
-## Tecnologías utilizadas
+- Search for movies and TV shows by title.
+- View movie details, such as plot, rating, cast, genres, trailers, etc.
+- Intuitive and user-friendly interface.
+- Sort movies and TV shows by popularity, rating, release date, and title.
+- Filter movies and TV shows by genres.
+- Create an account and log in.
+- Save favorite movies.
 
-- HTML
-- CSS
+## Technologies Used
+
+- Sass
 - JavaScript
 - React.js
-- Redux
+- Context
 - Axios
 - React Router
-- API de The Movie Database (TMDb)
+- The Movie Database (TMDb) API
 
-## Instalación
+## Installation
 
-1. Clona este repositorio en tu máquina local: `git clone https://github.com/JuanchiiGomezZ/FlexMoviesFrontend`
-
-2. Ve al directorio del proyecto: `cd FlexMoviesFrontend`
-
-3. Instala las dependencias: `npm install`
-
-4. Renombrar el archivo env.template por .env y haz los cambios respectivos en las variables de entorno
-
+1. Clone this repository to your local machine: 
 ```
-VITE_API_KEY= Agrega tu clave de API de TMDb
-VITE_API_URL= Agrega la url de tu base de datos
+git clone https://github.com/JuanchiiGomezZ/FlexMoviesFrontend
 ```
 
-5. Inicia la aplicación `npm run dev`
+2. Navigate to the project directory: ```cd FlexMoviesFrontend```
 
-## Base de datos de usuario
+3. Install the dependencies: ```npm install```
 
-Backend desarrollado con NodeJS, MySQL y Express [Repositorio](https://github.com/JuanchiiGomezZ/FlexMoviesBackend)
+4. Rename the env.template file to .env and make the necessary changes to the environment variables:
+```
+VITE_API_KEY= Add your TMDb API key
+VITE_API_URL= Add your database URL
+```
 
-Funcionalidades:
+5. Start the application: ```npm run dev```
 
-- POST sign up
-- POST login
-- GET user data
-- GET user favs
-- POST favorite
-- DELETE favorite
+## Backend & Database
+NodeJS, Express, MySQL.
+- Authentication and Authorization: The backend provides routes and controllers to handle user authentication and authorization. This includes user registration, user login, and the generation and verification of access tokens to secure access to protected functionalities.
+- Movie Management: The backend offers routes and controllers to perform operations related to movies. This can include fetching movie information from a database or an external API, creating new movies, updating existing movie details, and deleting movies.
+- Favorites List: The backend allows users to save movies as favorites. This involves implementing routes and controllers to add movies to a user's favorites list, remove movies from the list, and retrieve a user's list of favorite movies.
+- Database Interaction: The backend communicates with a database to store and retrieve information about users, movies, and other related data. This involves using technologies like relational or non-relational databases and performing CRUD (Create, Read, Update, Delete) operations to interact with the database.
 
+Features:
 
-## Derechos de autor
+- Sign up (POST)
+- Login (POST)
+- Get user data (GET)
+- Get user favorites (GET)
+- Add favorite (POST)
+- Remove favorite (DELETE)
 
-Proyecto creado por Mateo Bertello  
-[Github](https://github.com/JuanchiiGomezZ)  
+[Database repository](https://github.com/JuanchiiGomezZ/FlexMoviesBackend)
+
+## Copyright
+
+Project created by Juan Manuel Gomez Omil  
 [Linkedin](https://www.linkedin.com/in/juan-manuel-gomez-omil/)
 
-[API de The Movie Database (TMDb)](https://www.themoviedb.org/?language=es)
+[The Movie Database (TMDb) API](https://www.themoviedb.org/?language=es)
