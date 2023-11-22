@@ -16,7 +16,7 @@ const Home = () => {
   } = useContext(DataContext);
 
   useEffect(() => {
-    getMoviesData("popular");
+    getMoviesData("popular",1);
     getSeriesData("top_rated");
     
   }, []);

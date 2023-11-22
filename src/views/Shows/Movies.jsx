@@ -14,10 +14,10 @@ const Movies = () => {
   } = useContext(DataContext);
 
   useEffect(() => {
-    getMoviesData("popular"),
-      getMoviesData("top_rated"),
-      getMoviesData("now_playing"),
-      getMoviesData("upcoming");
+    getMoviesData("popular",1),
+      getMoviesData("top_rated",1),
+      getMoviesData("now_playing",1),
+      getMoviesData("upcoming",1);
   }, []);
 
   return (
